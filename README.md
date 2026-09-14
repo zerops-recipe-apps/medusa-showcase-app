@@ -6,9 +6,9 @@ Medusa v2.19 commerce backend, admin, and Next.js 16 App Router storefront in on
 
 ⬇️ **Deploy on Zerops**
 
-[![Deploy on Zerops](https://github.com/zeropsio/recipe-shared-assets/blob/main/deploy-button/light/deploy-button.svg)](https://app.zerops.io/recipes/medusa?environment=small-production)
+[![Deploy on Zerops](https://github.com/zeropsio/recipe-shared-assets/blob/main/deploy-button/light/deploy-button.svg)](https://app.zerops.io/recipes/medusa-showcase?environment=small-production)
 
-Import YAMLs and environment docs live in the [Medusa recipe catalog](https://github.com/zeropsio/recipes/tree/main/medusa) (`zeropsio/recipes`) — not in this app repo.
+Import YAMLs and environment docs live in the [Medusa recipe catalog](https://github.com/zeropsio/recipes/tree/main/medusa-showcase) (`zeropsio/recipes`) — not in this app repo.
 
 ## Repository layout
 
@@ -80,7 +80,7 @@ Need help? Join the [Zerops Discord](https://discord.gg/zeropsio).
 - **`medusa`** — builds in `backend/`, deploys `.medusa/server`, port 9000, init migrate/seed/publishable key/reload nextstore
 - **`nextstore`** — builds in `nextstore/` with Corepack + Yarn Berry, port 8000, readiness `/api/health`
 
-Both services use the same `buildFromGit: https://github.com/zerops-recipe-apps/medusa-showcase` URL; Zerops selects the setup via `zeropsSetup` in [import.yaml](https://github.com/zeropsio/recipes/tree/main/medusa).
+Both services use the same `buildFromGit: https://github.com/zerops-recipe-apps/medusa-showcase` URL; Zerops selects the setup via `zeropsSetup` in [import.yaml](https://github.com/zeropsio/recipes/tree/main/medusa-showcase).
 
 Map project value store keys in each setup (`APP_URL`, `API_URL`, `SEARCH_URL`) — never put framework keys on import **service** blocks.
 

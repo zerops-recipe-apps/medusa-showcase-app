@@ -1,6 +1,6 @@
 # medusa-showcase
 
-Medusa v2.19 backend + Next.js 16 storefront monorepo on Zerops (`nodejs@24`). App repo for the [Medusa recipe](https://app.zerops.io/recipes/medusa).
+Medusa v2.19 backend + Next.js 16 storefront monorepo on Zerops (`nodejs@24`). App repo for the [Medusa recipe](https://app.zerops.io/recipes/medusa-showcase).
 
 ## Layout
 
@@ -9,7 +9,7 @@ Medusa v2.19 backend + Next.js 16 storefront monorepo on Zerops (`nodejs@24`). A
 | `backend/` | `medusa` | 9000 | Yarn 1, Medusa admin at `/app` |
 | `nextstore/` | `nextstore` | 8000 | Yarn 3 Berry, SSR |
 
-Root [`zerops.yml`](zerops.yml) — both setups. **Import YAMLs live in** [`zeropsio/recipes/medusa`](https://github.com/zeropsio/recipes/tree/main/medusa) — not in this repo.
+Root [`zerops.yml`](zerops.yml) — both setups. **Import YAMLs live in** [`zeropsio/recipes/medusa-showcase`](https://github.com/zeropsio/recipes/tree/main/medusa-showcase) — not in this repo.
 
 ## Siblings (Zerops project)
 

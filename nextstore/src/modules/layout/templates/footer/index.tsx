@@ -133,7 +133,7 @@ export default async function Footer() {
                 </li>
                 <li>
                   <a
-                    href="https://app.zerops.io/recipes/medusa"
+                    href="https://app.zerops.io/recipes/medusa-showcase"
                     target="_blank"
                     rel="noreferrer"
                     className="hover:text-ui-fg-base"
