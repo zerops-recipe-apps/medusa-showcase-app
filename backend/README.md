@@ -24,7 +24,7 @@ Copy `.env.template` and set `DATABASE_URL` plus Redis URLs. Leave `SMTP_HOST` e
 
 ## Admin login
 
-Medusa Admin lives at **`/app`** on port `9000` (the Store API is the same host without that path). After first deploy, `yarn createInitialSuperadmin` creates the user once per service lifetime.
+Medusa Admin lives at **`/app`** on port `9000` (the Store API is the same host without that path). After first deploy, `yarn createInitialSuperadmin` creates the user (or re-binds emailpass if the user row already exists).
 
 | Where | Open |
 | --- | --- |
