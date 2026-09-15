@@ -73,7 +73,9 @@ zerops:
       initCommands:
         - zsc execOnce ${appVersionId}_migration -- yarn migrate
         - zsc execOnce ${appVersionId}_links -- yarn syncLinks
-        - zsc execOnce createInitialSuperadmin -- yarn createInitialSuperadmin
+        # v2: idempotent emailpass bind. The first key could mark success
+        # after `medusa user` hit "already exists" with no working password.
+        - zsc execOnce createInitialSuperadmin_v2 -- yarn createInitialSuperadmin
         - zsc execOnce seedInitialData -- yarn seedInitialData
         - yarn setInitialPublishableKey
         - yarn reloadNextstoreEnv
